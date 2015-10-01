@@ -31,6 +31,24 @@
 		<div class="panel">
 			<p>{{intervals.interval}}-mile service</p>
 			<p class="label label-default">{{intervals.items.length}} actions needed</p>			
+
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Action</th>
+						<th>Done</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in intervals.items">
+						<td>{{item.action}}</td>
+						<td>{{item.done}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
 		</div>
 
 
