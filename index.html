@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="mileageApp">
+
+<head>
+	<title>Mileage Advisor App</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+
+<body ng-controller="mileageCtrl">
+
+
+	<div class="container center-block col-lg-8">
+		<div class="page-header">
+			<h1>Mileage Advisor</h1>
+		</div>
+
+		<div class="panel">
+			<div class="input-group">
+				<input class="form-control" />
+				<span class="input-group-btn">
+					<button class="btn btn-default">Update Miles</button>
+				</span>
+			</div>			
+		</div>
+
+		<div class="panel">
+			<p>{{intervals.interval}}-mile service</p>
+			<p class="label label-default">{{intervals.items.length}} actions needed</p>			
+		</div>
+
+
+	</div>
+
+
+
+
+</body>
+
+</html>
